@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import bip39 from 'bip39';
+import { bip39 } from 'bip39';
 
 import './style.css';
 
