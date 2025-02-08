@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import * as bip39 from 'bip39';
 
 import './style.css';
@@ -19,7 +19,7 @@ function App() {
   const copyMnemonic = async () => {
     try {
       if (navigator.clipboard && window.isSecureContext) {
-        await navigator.clipboard.writeText(textToCopy);
+        await navigator.clipboard.writeText(mnemonic);
         alert("Текст скопирован в буфер обмена!");
       } else {
         alert("Копирование не поддерживается");
