@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import { generateMnemonic } from 'bip39';
 
 import './style.css';
 
@@ -14,8 +13,6 @@ function App() {
 
   useEffect(() => {
     tg.ready();
-    // setMnemonic(bip39.generateMnemonic());
-alert(generateMnemonic());
   }, []);
 
   return (
